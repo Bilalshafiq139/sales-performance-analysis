@@ -1,4 +1,9 @@
 Sales Performance Analysis
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-yellow)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange)
+![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Visualization-green)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 
 Project Overview
 
