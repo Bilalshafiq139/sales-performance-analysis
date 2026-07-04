@@ -1,158 +1,164 @@
-Sales Performance Analysis
+# Sales Performance Analysis
+
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-yellow)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange)
 ![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Visualization-green)
 ![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 
-Project Overview
+## Overview
 
-This project analyzes retail sales data from a Superstore dataset in order to identify which products, regions, and customer segments generate the highest revenue and profit. The objective of the analysis is to transform raw transactional data into actionable business insights that can support strategic decision making.
+Retail sales performance analysis built with Python to identify revenue drivers, profit leakage, regional performance gaps, and discount-related margin risk. The project converts order-level transaction data into business-ready KPIs, visual insights, and recommendations for improving profitability.
 
-The analysis focuses on discovering patterns in product performance, regional sales behavior, customer segmentation, and profitability drivers. The project demonstrates the complete data analytics workflow from raw data inspection to business recommendations.
+## Executive Summary
 
-Business Problem
+| KPI | Result |
+|---|---:|
+| Total Sales | $2,297,200.86 |
+| Total Profit | $286,397.02 |
+| Profit Margin | 12.47% |
+| Top Region by Sales | West |
+| Top Category by Profit | Technology |
+| Most Profitable Sub-Category | Copiers |
+| Highest Loss Area | Tables / Furniture Discounts |
 
-Retail companies often generate large sales volumes but struggle with profitability due to excessive discounting, inefficient product portfolios, or regional performance imbalances.
-
-This project investigates the following questions:
-
-Which products generate the highest profit margins
-
-Which regions produce the strongest sales performance
-
-Which customer segments contribute the most revenue
-
-Which products generate high revenue but low or negative profit
-
-The objective is to identify actionable insights that can help management improve profitability and operational efficiency.
-
-Dataset
-
-The dataset used in this project is the Superstore dataset available on Kaggle.
-
-Dataset source:
-https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
-
-The dataset contains transactional sales records including order details, product categories, geographic regions, customer segments, sales values, profit values, and discounts.
-
-Each row represents a single product within a customer order.
-
-Dataset Description
-
-The analysis is based on the Superstore retail dataset, which contains historical transactional records from a retail business.
-
-The dataset includes information about customer orders, product categories, geographic regions, sales revenue, profit values, and discount levels.
-
-Dataset Characteristics
-
-Number of records: 9,994  
-Number of features: 22  
-
-Key Variables
-
-Order Date  
-Ship Date  
-Region  
-Category  
-Sub Category  
-Customer Segment  
-Sales  
-Profit  
-Discount  
-
-Each record represents a single product within a customer order, allowing detailed analysis of product-level profitability and sales performance.
-
-This dataset is widely used in data analytics training because it reflects common retail business challenges such as discount strategies, product performance differences, and regional market variation.
-
-Tools and Technologies
-
-Python was used as the primary programming language.
-
-The following libraries were used during the analysis:
-
-Pandas for data manipulation and transformation  
-Matplotlib for data visualization  
-Seaborn for statistical visualizations  
-Jupyter Notebook for analysis and documentation  
-
-Project Workflow
-
-Data Understanding
-
-The first stage involved examining the dataset structure. Column names, data types, missing values, and duplicate records were inspected to understand the overall data quality.
-
-Data Cleaning
-
-The dataset was cleaned by verifying column formats, checking inconsistencies, and preparing the data for analysis. Additional time related features were also prepared to support deeper analysis.
-
-Exploratory Data Analysis
-
-Exploratory analysis was performed to identify patterns in sales and profitability. The analysis focused on product categories, sub categories, regions, and customer segments.
-
-Data Visualization
-
-Multiple visualizations were created to clearly communicate patterns in the data. These visualizations illustrate differences in revenue generation, profit margins, and regional performance.
-
-Business Insights
-
-The analysis identified key drivers of profitability as well as areas where the company is losing money due to discounting or product mix.
-
-Key Findings
-
-Technology products generate the highest overall profit.
-
-Copiers are the most profitable sub category despite relatively lower sales volume compared to phones.
-
-Tables generate significant losses due to heavy discounting.
-
-The West region produces the strongest overall sales and profitability.
-
-The Consumer segment contributes the largest portion of revenue.
-
-Strategic Recommendations
-
-Discount levels on furniture products should be controlled to prevent negative profit margins.
-
-High margin products such as copiers and technology products should receive greater promotional focus.
-
-Regional operational strategies should be reviewed in the Central region to improve profit margins.
-
-Customer marketing campaigns should prioritize segments that produce higher margins.
-
-Project Structure
-
-Sales_Performance_Analysis
-
-data  
-Contains raw and processed datasets used throughout the analysis
-
-notebooks  
-Contains all Jupyter notebooks used in the analytical workflow
-
-reports  
-Contains exported charts and visualizations generated during analysis
-
-README.md  
-Project documentation and explanation
-
-requirements.txt  
-Python dependencies required to run the project
-
-How to Run the Project
-
-Clone the repository to your local machine.
-
-Install the required Python libraries listed in the requirements file.
-
-Open the notebooks in Jupyter Notebook or Visual Studio Code and run them sequentially.
-
-
-
-
-
-Author
-
-Bilal Shafique
-
-Data Analytics Project
+## Visual Preview
+
+![Sales Overview](assets/screenshots/sales_overview.png)
+
+![Category Profit Analysis](assets/screenshots/category_profit.png)
+
+![Regional Performance](assets/screenshots/regional_performance.png)
+
+## Business Objective
+
+The analysis focuses on the core questions a retail leadership team would need answered:
+
+- Which products and categories generate the strongest profit?
+- Which regions deliver the best sales and margin performance?
+- Which customer segments contribute the most revenue?
+- Where is discounting creating negative profit?
+- Which areas should be prioritized to improve overall profitability?
+
+## Data Source
+
+Dataset: Superstore retail transaction data from Kaggle<br>
+Source: https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
+
+The dataset includes product-level order records with sales, profit, discount, customer segment, product category, sub-category, region, and order dates.
+
+## Data Profile
+
+| Metric | Value |
+|---|---:|
+| Records | 9,994 |
+| Original Columns | 22 |
+| Period Covered | 2014-2017 |
+| Grain | Product-level order line |
+
+Key fields used in the analysis:
+
+- Order Date
+- Region
+- Category
+- Sub-Category
+- Segment
+- Sales
+- Profit
+- Discount
+
+## Deliverables
+
+- Cleaned analysis-ready dataset
+- KPI summary for sales, profit, margin, and top performers
+- Product, region, and customer segment profitability analysis
+- Exported visual assets for portfolio presentation
+- Executive insights report: `reports/insights_summary.md`
+- Business recommendations focused on margin improvement
+
+## Tools
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+
+## Workflow
+
+| Notebook | Purpose |
+|---|---|
+| `1_Data_Understanding.ipynb` | Load raw data, inspect schema, validate quality, and create the first cleaned file. |
+| `2_Data_Cleaning.ipynb` | Standardize date fields and prepare the dataset for analysis. |
+| `3_EDA.ipynb` | Calculate KPIs and analyze category, sub-category, region, and segment performance. |
+| `4_Visualizations.ipynb` | Create and export visual summaries for sales, profit, and regional performance. |
+| `5_Business_Insights.ipynb` | Convert analysis outputs into business insights and recommendations. |
+
+## Key Findings
+
+- Technology is the strongest profit category with $145,454.95 in profit, contributing 50.8% of total profit and delivering a 17.4% margin.
+- Copiers are the highest-profit sub-category with $55,617.82 in profit from $149,528.03 in sales, producing a 37.2% margin.
+- Tables are the largest loss-making sub-category, with -$17,725.48 in profit despite $206,965.53 in sales. Average discounting on Tables is 26.1%.
+- The West region leads performance with $725,457.82 in sales and $108,418.45 in profit, contributing 31.6% of sales and 37.9% of profit.
+- The Consumer segment is the largest revenue contributor with $1,161,401.34 in sales, representing 50.6% of total sales.
+- Furniture has weak profitability: $741,999.80 in sales but only $18,451.27 in profit, a 2.5% margin.
+- The Central region underperforms on margin, generating $39,706.36 profit on $501,239.89 in sales with the highest average discount level among regions.
+
+## Recommendations
+
+- Tighten discount controls on Furniture, especially Tables, to stop high-volume orders from reducing total profit.
+- Prioritize Technology promotions, with special focus on Copiers because of their strong margin profile.
+- Review pricing and discount approvals in the Central region to improve margin quality.
+- Use Consumer segment volume for targeted retention, cross-sell, and high-margin product campaigns.
+- Maintain strong execution in the West region because it leads both revenue and profit contribution.
+
+## Project Structure
+
+```text
+sales-performance-analysis/
+|-- data/
+|   |-- Sample - Superstore.csv
+|   |-- cleaned_data.csv
+|   |-- cleaned_data_for_EDA.csv
+|   |-- cleaned_data_for_EDA_visualization.csv
+|-- notebooks/
+|   |-- 1_Data_Understanding.ipynb
+|   |-- 2_Data_Cleaning.ipynb
+|   |-- 3_EDA.ipynb
+|   |-- 4_Visualizations.ipynb
+|   `-- 5_Business_Insights.ipynb
+|-- assets/
+|   `-- screenshots/
+|       |-- sales_overview.png
+|       |-- category_profit.png
+|       `-- regional_performance.png
+|-- reports/
+|   `-- insights_summary.md
+|-- requirements.txt
+`-- README.md
+```
+
+## How to Run
+
+```bash
+git clone https://github.com/Bilalshafiq139/sales-performance-analysis.git
+cd sales-performance-analysis
+pip install -r requirements.txt
+python -m notebook
+```
+
+Open and run the notebooks in order:
+
+1. `notebooks/1_Data_Understanding.ipynb`
+2. `notebooks/2_Data_Cleaning.ipynb`
+3. `notebooks/3_EDA.ipynb`
+4. `notebooks/4_Visualizations.ipynb`
+5. `notebooks/5_Business_Insights.ipynb`
+
+## Author
+
+**Bilal Shafique**<br>
+Data Analyst | Python | SQL | Power BI | Excel<br>
+LinkedIn: https://www.linkedin.com/in/bilal-shafique<br>
+GitHub: https://github.com/Bilalshafiq139
