@@ -26,9 +26,15 @@ Retail sales performance analysis built with Python to identify revenue drivers,
 
 ![Sales Overview](assets/screenshots/sales_overview.png)
 
+This chart compares sales and profit contribution across customer segments.
+
 ![Category Profit Analysis](assets/screenshots/category_profit.png)
 
+This chart highlights profit contribution by product category and shows where profitability is concentrated.
+
 ![Regional Performance](assets/screenshots/regional_performance.png)
+
+This chart compares regional sales volume with profit performance to identify strong and underperforming regions.
 
 ## Business Objective
 
@@ -112,6 +118,10 @@ Key fields used in the analysis:
 - Review pricing and discount approvals in the Central region to improve margin quality.
 - Use Consumer segment volume for targeted retention, cross-sell, and high-margin product campaigns.
 - Maintain strong execution in the West region because it leads both revenue and profit contribution.
+
+## Business Impact
+
+This analysis shows that sales volume alone is not enough to evaluate performance. Tables and Furniture generate meaningful revenue but weak profit, while Technology and Copiers produce stronger margins. Better discount controls and a sharper focus on high-margin products can improve profitability without requiring major sales growth.
 
 ## Project Structure
 
