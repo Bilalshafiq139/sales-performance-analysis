@@ -169,6 +169,6 @@ Open and run the notebooks in order:
 ## Author
 
 **Bilal Shafique**<br>
-Data Analyst | Python | SQL | Power BI | Excel<br>
+Data Analyst | Python | Pandas | Data Visualization | Business Analytics<br>
 LinkedIn: https://www.linkedin.com/in/bilal-shafique<br>
 GitHub: https://github.com/Bilalshafiq139
